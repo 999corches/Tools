@@ -2,6 +2,7 @@ import {
   Braces,
   Binary,
   Fingerprint,
+  LayoutGrid,
   type LucideIcon,
 } from "lucide-react";
 
@@ -14,6 +15,7 @@ import {
  */
 
 export const CATEGORIES = [
+  "Links",
   "Text",
   "Daten",
   "Bilder",
@@ -41,6 +43,30 @@ export type Tool = {
 };
 
 export const tools: Tool[] = [
+  {
+    slug: "dashboard",
+    name: "Dashboard",
+    description:
+      "Direkt zu den Diensten, die ich täglich brauche — Supabase, Resend, IONOS, Cloudflare, GitHub, Vercel.",
+    category: "Links",
+    icon: LayoutGrid,
+    keywords: [
+      "dashboard",
+      "links",
+      "lesezeichen",
+      "bookmarks",
+      "supabase",
+      "resend",
+      "ionos",
+      "cloudflare",
+      "github",
+      "vercel",
+      "hosting",
+      "dns",
+      "mail",
+      "deploy",
+    ],
+  },
   {
     slug: "json-formatter",
     name: "JSON-Formatter",
